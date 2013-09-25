@@ -1,0 +1,92 @@
+ %% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[orange]{casual}                 
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Clément}
+\familyname{Delafargue}
+\address{1 place Graslin}{44000 Nantes, FRANCE}
+\mobile{+33 6 16 88 85 24 }
+%\phone{}
+%\fax{fax (optional)}
+\email{clement@delafargue.name}
+%\extrainfo{additional information (optional)}
+\photo[74pt]{profile_square.jpg}
+\quote{\Large CTO / Software engineer}
+
+\nopagenumbers{}	% uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Computer skills}
+  \cvcomputer{Programming}{\textbf{Haskell}, Java, \textbf{Javascript},
+  \textbf{Scala}, PHP}
+             {DBMS}{MySQL, \textbf{PostgreSQL}, \textbf{CouchBase}, MongoDB}
+  \cvcomputer{Server-side web}{\textbf{Play Framework 2.x} , Liftweb,\newline{}Unfiltered, Node JS}
+             {Client-side web}{HTML5/CSS3, JS, jQuery,\newline{}Backbone, Underscore}
+  \cvcomputer{Operating Systems}{GNU/Linux (Archlinux, Gentoo, \textbf{Exherbo}, Debian, Ubuntu)}
+             {Mobile}{\textbf{Phonegap} (iOS, Android)}
+
+\section{Work Experience}
+\cventry{From Apr.~2011}{Substitute teacher}{École Centrale de
+Nantes}{Nantes}{}{Talks and teaching to 3rd, 4th and 5th year students\newline{}
+    C, Java, PHP (Symfony), Git, Continuous Integration, Play! 2.x, Haskell / FP
+}
+\cventry{Apr.~2011 - Dec.~2012}{CTO}{Eklaweb}{Nantes}{}{Technical design, Team Management, Development\newline{}
+    Technologies used: \textbf{Play (+Scala)}, Liftweb, \textbf{MongoDB}, Backbone.JS, Unfiltered\newline{}
+    Teaching: PHP5, Javascript (embedded in eBooks), PL/SQL, HTML5/CSS3
+}
+  \cventry{2005 - 2010}{Software engineer - Administrator}{Eklablog}{Versailles, Nantes}{}{
+  Designed and Developed modules for Eklablog engine (blog platform)\newline{}
+  Administrated production development servers(4 servers running Debian GNU / Linux, 5M Visitors/month)\newline{}
+  Deployed modified versions of Eklablog Engine on clients' servers\newline{}
+  Technologies used: \textbf{PHP5}, Mootools, MySQL, Apache, \textbf{Postfix}, Redmine, SVN, Nagios}
+  
+\section{Side Projects}
+  \cventry{SounderBox}{Design / Development}{}{}{}{Collaborative playlist editing (node.js / socket.io, MongoDB) \url{http://github.com/divarvel/openspice-server}}
+  \cventry{Checkspear}{Design / Development}{}{}{}{Pokemon on foursquare (Play 1.2, MongoDB, Unfiltered, RabbitMQ).  \url{http://www.checkspear.com}}
+  \cventry{OpenOffice.org 4 kids}{Development}{}{}{}{Development on Impress in OOo4kids (light version of OOo designed for children), C++ / Boost}
+  \cventry{Nantes FP}{Animation}{}{}{}{Talks and coding sessions about functional programming \url{http://nantes-fp.github.com}}
+  \cventry{PHPz}{Nerd joke}{}{}{}{Functional programming (à la Scalaz) in PHP.  I did it for the lulz}
+
+\section{Education}
+  \cventry{Sept.~2008 - Nov.~2011}{Ecole Centrale de Nantes (ECN)}{General
+  Engineering School}{}{}{Specialisation in Computer Engineering}  % arguments 3 to 6 are optional
+  \cventry{Jun. 2006}{Baccalauréat (French National Exam -- High School Diploma) - Science}{}{}{With Honours}{}
+
+\section{Languages}
+  \cvcomputer{English}{Fluent (\textbf{ToEIC : 975})}{Spanish}{Basic skills}
+
+\section{Leisure - Sports}
+  \cvcomputer{Sports}{Rock climbing, Running}{Leisure}{Digital photography,
+  Computer Science, Functional Programming, Type Theory}
+
+\closesection{}                   % needed to renewcommands
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}

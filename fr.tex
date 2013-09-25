@@ -1,0 +1,109 @@
+ %% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[orange]{casual}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\usepackage{ifpdf}
+\ifpdf
+    \pdfinfo {
+        /Author (Clément Delafargue)
+        /Title (Clément Delafargue - Ingénieur dans le domaine des systèmes d'information)
+        /Subject (SUBJECT)
+        /Keywords (KEYWORDS)
+        /CreationDate (D:20100601175554)
+    }
+\fi
+
+\addtolength{\oddsidemargin}{0pt}
+\addtolength{\textwidth}{0pt}
+\addtolength{\topmargin}{-25pt}
+\addtolength{\textheight}{10pt}
+\addtolength{\marginparsep}{0pt}
+\addtolength{\marginparwidth}{0pt}
+
+% personal data
+\firstname{Clément}
+\familyname{Delafargue}
+\address{1 place Graslin}{44000 Nantes, FRANCE}
+\mobile{+33 6 16 88 85 24 }
+%\phone{}
+%\fax{fax (optional)}
+\email{clement@delafargue.name}
+%\extrainfo{additional information (optional)}
+\photo[70pt]{clement.jpg}
+\quote{\Large Ingénieur dans le domaine des systèmes d'information}
+
+\nopagenumbers{}    % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Expériences}
+    \cventry{Depuis avr.~2011}{Vacataire}{École Centrale de Nantes}{Nantes}{}{Cours et interventions\newline{}
+        C, Java, PHP (Symfony), Git, Integration Continue, Play 2!, Haskell / FP
+    }
+    \cventry{Depuis avr.~2011}{CTO}{Eklaweb}{Nantes}{}{Management, architecture, formation, développement\newline{}
+        Technologies: \textbf{Play (+Scala)}, Liftweb, \textbf{MongoDB}, Backbone.JS, Unfiltered\newline{}
+        Formations assurées: PHP5, Javascript (dans des livres électroniques), PL/SQL, HTML5/CSS3
+    }
+      \cventry{avr.~2010 à août.~2010}{Ingénieur en développement}{Exclusift}{Palo Alto}{}{Mise en place d'une plate-forme de listes de mariage\newline{}
+      Technologies: \textbf{PHP5}, \textbf{JQuery}, MySQL, \textbf{Facebook Graph API}
+    }
+
+  \cventry{2005 - 2010}{Développeur - Administrateur}{Eklablog}{Versailles, Nantes}{}{
+  Réalisation de modules pour la plate-forme Eklablog.com (5M VU / mois)\newline{}
+  Administration des serveurs hébergeant la plate-forme\newline{}
+  Modification et déploiement d'instances dédidées\newline{}
+  Technologies: \textbf{PHP5}, Mootools, MySQL, Apache, \textbf{Postfix}, Redmine, SVN, Nagios}
+  
+\section{Formation}
+\cventry{sept.~2008 à~déc.~2011} {Ecole Centrale de Nantes (ECN)} {École d'ingénieurs généralistes}{}{}{Options Informatique -- Entreprendre}  % arguments 3 to 6 are optional
+
+\section{Langues} \cvcomputer{Anglais}{Courant (\textbf{ToEIC : 975})}{Allemand}{Niveau Scolaire}
+
+\section{Compétences en informatique}
+  \cvcomputer{Programmation}{C, C++, \textbf{Haskell}, Java, \textbf{Javascript}, PHP, Python, Ruby, \textbf{Scala}}
+             {SGBD}{MySQL, \textbf{PostgreSQL}, CouchDB, \textbf{MongoDB}}
+  \cvcomputer{Server-side web}{\textbf{Play Framework} (1.2/2), Liftweb,\newline{}Unfiltered, RoR, Node JS}
+             {Client-side web}{HTML5/CSS3, JS, jQuery,\newline{}Backbone, Underscore}
+  \cvcomputer{Systèmes d'Exploitation}{GNU/Linux (Archlinux, \textbf{Gentoo}, \textbf{Debian}, Ubuntu)}
+             {Mobile}{\textbf{Phonegap} (iOS, Android)}
+
+\newpage{}
+\section{Side projects}
+\cventry{depuis janv.~2012}{Animateur}{Nantes FP}{}{}{Conférences et ateliers autour de la programmation fonctionnelle \url{http://nantes-fp.github.com}}
+\cventry{nov.~2010 à fév.~2011}{Développeur}{OpenOffice.org 4 kids}{}{}{Développement en C++ sur le module d'annotation des diapositives}
+\cventry{fév.~2010 à~fév.~2011}{Responsable informatique}{Centrale Nantes Études}{}{}{Responsable informatique de la junior entreprise de l'ECN}
+\cventry{mars~2009 à mars~2010}{Secrétaire Général}{Association Culturelle de l'École Centrale de Nantes}{}{}{Secrétaire Général du Bureau Des Arts de l'École Centrale de Nantes}
+
+\section{Centres d'intérêt}
+\cvcomputer{Sports}{Escalade, Course à pied (Sainté-Lyon)}{Loisirs}{Nautisme, Photographie numérique}
+\cvcomputer{Informatique théorique}{Théorie des catégories, programmation fonctionnelle}{}{}
+
+\closesection{}                   % needed to renewcommands
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
